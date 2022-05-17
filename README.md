@@ -53,3 +53,5 @@ chmod +x docker_commands.sh
 ~~~
 docker-compose up -d --build
 ~~~
+
+* [http://127.0.0.1:8080](http://127.0.0.1:8080)
