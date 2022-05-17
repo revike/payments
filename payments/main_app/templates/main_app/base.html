@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>
+        {% block title %}
+            {{ title|capfirst }}
+        {% endblock %}
+    </title>
+    {% block js %}
+        <script src="https://polyfill.io/v3/polyfill.min.js?version=3.52.1&features=fetch"></script>
+        <script src="https://js.stripe.com/v3/"></script>
+    {% endblock %}
+</head>
+<body>
+{% block content %}
+{% endblock %}
+</body>
+</html>

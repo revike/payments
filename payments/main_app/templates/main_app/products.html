@@ -1,0 +1,17 @@
+{% extends 'main_app/base.html' %}
+
+{% block content %}
+    <section>
+        <div class="product">
+            {% for object in object_list %}
+                <div class="description">
+                    <h3>
+                        <a href="{% url 'main_app:item' pk=object.pk %}">{{ object.name }}</a>
+                    </h3>
+                    <h4>{{ object.description }}</h4>
+                    <h5>{{ object.price }} руб.</h5>
+                </div>
+            {% endfor %}
+        </div>
+    </section>
+{% endblock %}
