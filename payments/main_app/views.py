@@ -79,5 +79,5 @@ class CancelView(TemplateView):
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
-        context['title'] = 'cansel'
+        context['title'] = 'cancel'
         return context
